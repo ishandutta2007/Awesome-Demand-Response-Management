@@ -56,9 +56,9 @@ Below is a curated comparison of leading commercial Demand Response, DERMS, and 
 
 Demand Response Management features a vibrant open-source ecosystem, particularly for optimization modeling, microgrid energy management (EMS), and distribution market simulation.
 
-*Sorted by GitHub Star Count (Descending)*
+*Sorted by GitHub Stars_Count (Descending)*
 
-| 📦 Repository & Link | ⭐ Stars | 🛠️ Category | 📝 Description & Stack |
+| 📦 Repository & Link | ⭐ GitHub_Stars | 🛠️ Category | 📝 Description & Stack |
 | :--- | :---: | :--- | :--- |
 | **[PyPSA](https://github.com/pypsa/pypsa)** | [<img src="https://img.shields.io/github/stars/pypsa/pypsa?style=social&color=white" alt="PyPSA Stars"/>](https://github.com/pypsa/pypsa/stargazers) | Grid Simulation | **Python for Power System Analysis.** Open-source toolbox for simulating and optimizing modern power systems with high shares of variable renewables and demand-side flexibility. |
 | **[OpenEMS](https://github.com/OpenEMS/openems)** | [<img src="https://img.shields.io/github/stars/OpenEMS/openems?style=social&color=white" alt="OpenEMS Stars"/>](https://github.com/OpenEMS/openems/stargazers) | Energy Management | **Modular Open-Source Energy Management System.** Reference EMS implementation with EEBus/jEEBus integration, BSI-compliant control signals (§14a EnWG), and microgrid control capabilities. |
@@ -79,7 +79,7 @@ Contributions are warmly welcomed! Help us expand this curated list of Demand Re
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` following the standard table formatting.
-3. 🔍 Ensure pricing, free-tier limits, and star badges are accurate and formatted correctly.
+3. 🔍 Ensure pricing, free-tier limits, and Stars_Badges are accurate and formatted correctly.
 4. 📬 Submit a **Pull Request** with a brief summary of your changes.
 
 ---
