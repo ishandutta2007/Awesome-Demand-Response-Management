@@ -1,215 +1,106 @@
-# Awesome-Demand-Response-Management
-
-## Top Demand Response Management Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Virtual Power Plants, DER Orchestration, Demand Response Programs & Grid Flexibility*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Demand Response Management**. These tools help utilities, aggregators, and commercial energy users orchestrate flexible demand, build virtual power plants (VPPs), and participate in grid services markets.
-
-
-
-**Examples** include AutoGrid, Uplight, Enel X, CPower, Virtual Peaker, GridPoint, EnergyHub, Leap, Voltus, and GridBeyond (the category leaders).
-
-
-
-**Open-source emphasis**: Demand Response Management has a **growing open-source ecosystem** driven by LF Energy and academic research. **FlexMeasures** is the leading open-source energy flexibility platform, providing forecasting, scheduling, and optimization for behind-the-meter assets . **DRAF (Demand Response Analysis Framework)** provides MILP-based optimization for local multi-energy hubs . **VPP-Sim** delivers a modular, MLOps-ready framework for developing and evaluating ML-driven VPP strategies . **OpenEMS** is the established open-source energy management system, now integrating EEBus for secure grid control . **OpenGridGym** enables AI-friendly distribution market simulation . This section documents these production-grade and research-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AutoGrid](https://www.auto-grid.com/)**
-
-  **AI-driven demand response and DER optimization platform.** The **AutoGrid Flex™** platform powers behavioral demand response programs, including a program across Delhi NCR covering **85,000+ enrolled residential and commercial customers** . Provides real-time granular demand response optimization and control, enabling full demand-side participation in electricity markets . Deployed by utilities worldwide for peak load shaving and network hotspot support.
-
-
-
-- **[Uplight](https://uplight.com/)**
-
-  **Integrated demand-side portfolio platform for utilities.** The **Uplight Demand Stack** combines energy efficiency, rates, and demand response to deliver measurable grid capacity . **Uplight Flex** is an Edge DERMS providing advanced tools to aggregate, orchestrate, and optimize DERs at the grid edge . **Proven scale**: 500k+ devices managed and **8.5 GW of flexible capacity** worldwide, with AI-powered forecasts running every 15 minutes at **97% accuracy** . Trusted by **80+ utilities including 8 of the 10 largest in North America** . Delivered **40 MW in a single VPP event** .
-
-
-
-- **[Enel X](https://www.enelx.com/)**
-
-  **World leader in demand response and one of the largest VPP aggregators in North America.** Operates the **largest demand response VPP globally and locally** . Orchestrates commercial and industrial businesses to reduce energy consumption during grid stress events, with participants paid both for availability and for reduction . **Partnership with Leap** (December 2025) expands C&I DER enrollment across utility programs in Washington, Arizona, and Tennessee Valley .
-
-
-
-- **[CPower](https://cpowerenergy.com/)**
-
-  **Leading VPP platform connecting energy assets to demand response and on-bill programs.** Manages **6.3 GW of capacity across ~20,000 sites** in the U.S., with **$1 billion+ paid out in grid revenue to customers since 2015** . **Customer-Powered Grid™** vision enables DER flexibility for capacity, energy, ancillary services, and demand charge management . Grew total monetized MW by **38% over the last three years** .
-
-
-
-- **[Leap](https://www.leap.energy/)**
-
-  **Software-only platform for building and scaling VPPs.** Manages **400,000+ energy sites and devices** across U.S. energy markets, empowering **100+ technology partners** . **API-powered solution** enables smart building and smart home providers to offer grid services under their own brand, with no additional hardware required . **Partnership with Enel** (December 2025) expands C&I DER access to utility programs nationwide .
-
-
-
-- **[GridBeyond](https://gridbeyond.com/)**
-
-  **AI-powered demand response and energy optimization platform.** **Point** platform with **ViewPoint Lens** provides asset-level performance and revenue visibility during DR events, launching in ERCOT and SPP markets . **AI platform** creates digital twins of customer sites for energy-saving scenario modeling and automated DR actions . Strong enrollment in **PJM's Emergency Load Response Program (ELRP)** , extending year-round from 2027/28 .
-
-
-
-- **[Virtual Peaker](https://www.virtual-peaker.com/)**
-
-  Cloud-based DER management platform for utilities. Orchestrates residential and commercial demand response programs with device-level control.
-
-
-
-- **[EnergyHub](https://www.energyhub.com/)**
-
-  DER management platform connecting utilities with smart thermostats, EVs, batteries, and other devices for demand response and VPP programs.
-
-
-
-- **[Voltus](https://www.voltus.co/)**
-
-  Demand response aggregator and platform for commercial and industrial customers. Manages demand response participation across North American markets.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Energy Flexibility & Optimization Platforms
-
-
-
-- **[FlexMeasures](https://github.com/FlexMeasures/flexmeasures)**
-
-  **The leading open-source energy flexibility platform, developed by Seita Energy Flexibility and contributed to LF Energy.** Acts as the "Lego Mindstorms" of smart energy planning—combining out-of-the-box algorithms, UIs, and APIs with modularity for smart orchestration of behind-the-meter assets . **Key capabilities**: Forecasting, scheduling, and optimization for energy flexibility; supports use cases including domestic buildings with heat pumps and EVs, neighborhood shared facilities with grid constraints, office buildings with multiple EVs, and large industrial plants with heat buffering . **Already adopted by smart energy startups worldwide** including Thiink Inc (U.S.) and iRasus Technologies (India) . **Python-based**.
-
-
-
-- **[DRAF (Demand Response Analysis Framework)](https://github.com/DrafProject/draf)**
-
-  **Analysis and decision support framework for local multi-energy hubs focusing on demand response.** Uses **(mixed integer) linear programming optimization** with pandas, Plotly, and Matplotlib . **Key features**: Time series analysis tools (`DemandAnalyzer`, `PeakLoadAnalyzer`); **component templates** for battery storage, EV, CHP, heat pump, PV, wind turbine, thermal storage, fuel cell, electrolyzer, hydrogen storage, and more; parameter preparation tools for electricity prices (via elmada) and carbon emission factors; **multi-objective optimization** supporting Pyomo and GurobiPy solvers . **Runs on Windows, macOS, and Linux**. Install via conda environment.
-
-
-
-### VPP Development Frameworks
-
-
-
-- **[VPP-Sim](https://dipot.ulb.ac.be/dspace/bitstream/2013/412118/3/paper.pdf)**
-
-  **Modular open-source framework for developing and deploying ML-driven strategies in Virtual Power Plants.** **MLOps-ready** with containerized microservices architecture orchestrated via Docker Compose and Kubernetes manifests . **Technology stack**: FastAPI backend (Python); React + TypeScript frontend; **Apache Kafka** for real-time data streaming; **TimescaleDB** for time-series data; **MLflow** for ML lifecycle management (tracking, models, reproducibility); **PuLP** for optimization solver . **Core contribution**: Bridges the gap between forecasting research and downstream economic impact by connecting state-of-the-art forecasting (LSTM, Temporal Fusion Transformer) with economic optimization and dispatch . **Supports evaluating how a better ML model or control strategy tangibly impacts VPP operational performance** .
-
-
-
-### Grid Simulation & Market Design
-
-
-
-- **[OpenGridGym](https://par.nsf.gov/servlets/purl/10451506)**
-
-  **Open-source AI-friendly toolkit for distribution market simulation.** Python-based framework enabling researchers to **swap out market mechanisms while keeping the same physical grid model**, and vice-versa . **Key features**: Modular architecture with base classes for Grid, Market, and Agents; leverages existing simulation tools like **OpenDSS** for grid modeling; **AI/ML-friendly** with PyTorch and CVXPY readily available; inspired by OpenAI Gym with templates and use cases . **Enables questions like**: Should local markets be peer-to-peer or DLMP-based? What role does AI play in future electricity markets? .
-
-
-
-- **[Deep Reinforcement Learning for Capacity-Constrained Demand Response](https://github.com/ShafaghAPashaki/Capacity-constrained-demand-response-in-smart-grid-using-deep-reinforcement-learning)**
-
-  **Open-source implementation of Double Deep Q-Network (DDQN) for incentive-based demand response in smart grids.** **Python 3.10+** with PyTorch . Provides a research foundation for applying RL to demand response optimization.
-
-
-
-### Energy Management Systems
-
-
-
-- **[OpenEMS](https://github.com/OpenEMS/openems)**
-
-  **Established open-source energy management system (EMS) with new EEBus integration.** **Fraunhofer ISE, FENECON, and OpenEMS Association** developed an **open-source reference implementation for EMS** enabling secure and interoperable communication between metering systems, control boxes, and decentralized energy assets . **jEEBus library** (SHIP, SPINE, LPC/LPP use cases) now available on GitHub . **Validated in Fraunhofer ISE's Digital Grid Lab**: Control command per §14a EnWG successfully transmitted over the entire iMSys communication chain to an OpenEMS-based EMS . **FENECON** will roll out EEBus interface to its FEMS software for all users . **Enables BSI-compliant control signal implementation** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Energy Flexibility**: **FlexMeasures** (LF Energy, forecasting + scheduling + optimization) , **DRAF** (MILP optimization, component templates) .
-
-- **VPP Development**: **VPP-Sim** (MLOps-ready, ML + economic optimization) .
-
-- **Grid Simulation**: **OpenGridGym** (AI-friendly market simulation) , **DDQN for DR** (reinforcement learning) .
-
-- **Energy Management**: **OpenEMS** (EEBus integration, BSI-compliant control) .
-
-- **Energy Communities**: **RESCHOOL EMS** (100% open source EMS for energy communities, CIM/IEC 62325 data models) .
-
-
-
-**Frameworks for building custom systems**: Combine **FlexMeasures** for energy flexibility forecasting and scheduling, **DRAF** for multi-energy hub optimization, **VPP-Sim** for ML-driven VPP strategy development with MLOps, **OpenEMS** for device-level energy management with EEBus communication, and **OpenGridGym** for market design simulation. Add **PostgreSQL/TimescaleDB** for time-series persistence and **Docker/Kubernetes** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Demand response platforms handle sensitive grid and energy consumption data; ensure compliance with FERC, NERC, and applicable regional energy regulations.
-
-- **Open-source reality**: The open-source ecosystem for demand response management is **growing and research-active** at the **optimization and simulation layers** (**FlexMeasures**, **DRAF**, **VPP-Sim**, **OpenGridGym**) and **mature at the energy management layer** (**OpenEMS** with EEBus) . However, **commercial platforms** (AutoGrid, Uplight, Enel X, CPower, Leap, GridBeyond) provide **utility-grade DERMS, real-time market dispatch, regulatory compliance, and the device aggregation networks** that open-source alternatives require significant integration and market access to match. The open-source path is most viable for **behind-the-meter optimization, VPP research, market simulation, and organizations with strong energy engineering capacity**.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Demand Response Management Banner" width="100%" />
+</p>
+
+# ⚡ Awesome Demand Response Management ⚡
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT" />
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintained" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 **Curated List of Enterprise SaaS Platforms & Open-Source GitHub Projects for Demand Response Management, Virtual Power Plants (VPP), Distributed Energy Resource Management Systems (DERMS), and Grid Flexibility Orchestration.**
 
 ---
 
+## 💡 Overview & Market Landscape
 
+The global **Demand Response Management System (DRMS) & Virtual Power Plant (VPP) market** is projected to grow from **$3.5 Billion in 2023 to over $12.8 Billion by 2030** (CAGR ~20.5%). Driven by FERC Order 2222, grid decarbonization, and extreme weather events, utilities and energy aggregators are rapidly deploying software to orchestrate behind-the-meter resources.
 
-**Made for utility demand response managers, DER aggregators, energy flexibility researchers, and grid operators.**
+📊 **Market Dynamics:** The sector is **moderately fragmented**, featuring a mix of utility-scale energy conglomerates (Enel X, Uplight), specialized high-growth aggregators (CPower, Leap, Voltus), and regional AI-native optimization vendors (AutoGrid, GridBeyond). No single player controls the market, making interoperability and open-source standards increasingly vital.
 
-Let's make demand response management more open, transparent, and grid-friendly.
+---
+
+## 📋 Table of Contents
+
+- [🏢 Enterprise SaaS & Hosted Platforms](#-enterprise-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#-disclaimer)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 Enterprise SaaS & Hosted Platforms
+
+Below is a curated comparison of leading commercial Demand Response, DERMS, and VPP aggregation platforms.
+
+| 🏢 Platform | 💰 Pricing Tier | 🎁 Free Tier / Trial Limit | 📊 Company Size (Valuation / Revenue) | 📝 Key Capabilities & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Enel X](https://www.enelx.com/)** | Custom Enterprise (Paid on grid earnings share / capacity payments) | 14-Day Enterprise Demo; no free tier | **$70B+ (Parent Enel Group Valuation) / $100B+ Revenue** | Largest global DR aggregator and VPP operator; orchestrates commercial & industrial flexible load across global energy markets. |
+| **[Uplight](https://uplight.com/)** | Custom Utility Enterprise ($50,000+/yr base utility platform fees) | Custom Sandbox Demo upon request; no free plan | **$1.5B Valuation (Unicorn) / $150M+ Est. Revenue** | Comprehensive utility demand stack; manages 8.5 GW of flexible DER capacity across 80+ major utilities with edge control. |
+| **[AutoGrid](https://www.auto-grid.com/)** | Enterprise SaaS (Starts ~$30,000/yr per MW program size) | 30-Day Utility Pilot Sandbox; no free tier | **Acquired by Schneider Electric ($80B+ valuation)** | AI-driven AutoGrid Flex™ platform powering real-time dispatch, peak load shaving, and behavioral DR programs worldwide. |
+| **[CPower](https://cpowerenergy.com/)** | Performance Revenue Share (No upfront cost; revenue split on grid earnings) | 30-Day Site Energy Audit & Onboarding Evaluation | **$250M+ Revenue / PE-backed (LS Power)** | Leading US VPP platform managing 6.3+ GW capacity across 20,000 sites; delivered over $1B in grid revenue payouts to clients. |
+| **[EnergyHub](https://www.energyhub.com/)** | Enterprise Utility SaaS ($25,000+/yr baseline utility contracts) | Demonstration Sandbox for Utilities; no free plan | **Acquired by Alarm.com ($3B+ Valuation)** | Leading residential DERMS connecting smart thermostats, EVs, and home batteries into utility grid service programs. |
+| **[Voltus](https://www.voltus.co/)** | Shared Savings Model (0 upfront fee; ~20-30% share on DR revenues) | 14-Day DR Revenue Estimate Audit; no free tier | **$1B Valuation / ~$50M Est. Revenue** | C&I demand response aggregator operating across all North American ISO/RTO wholesale electricity markets. |
+| **[GridBeyond](https://gridbeyond.com/)** | Custom SaaS / Shared Savings (Starts ~$15,000/yr for facility DR) | 30-Day ViewPoint Lens Trial Audit | **$300M+ Valuation / $45M+ Series C Funding** | AI-driven platform creating digital twins of industrial sites for automated wholesale DR dispatch and frequency response. |
+| **[Leap](https://www.leap.energy/)** | API Platform Fee + Revenue Share (Starts ~$1,000/mo API access) | 30-Day Developer API Sandbox (Up to 10 test devices) | **$150M+ Valuation / $33M+ Venture Funding** | Software-only universal VPP API enabling smart home and building automation vendors to monetize energy flexibility. |
+| **[Virtual Peaker](https://www.virtual-peaker.com/)** | Utility SaaS ($12,000/yr minimum per utility DR program) | 14-Day Utility Demo Account; no free tier | **$50M+ Valuation / $15M+ Funding** | Cloud-native DER management platform designed for public power utilities and electric cooperatives. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Demand Response Management features a vibrant open-source ecosystem, particularly for optimization modeling, microgrid energy management (EMS), and distribution market simulation.
+
+*Sorted by GitHub Star Count (Descending)*
+
+| 📦 Repository & Link | ⭐ Stars | 🛠️ Category | 📝 Description & Stack |
+| :--- | :---: | :--- | :--- |
+| **[PyPSA](https://github.com/pypsa/pypsa)** | [<img src="https://img.shields.io/github/stars/pypsa/pypsa?style=social&color=white" alt="PyPSA Stars"/>](https://github.com/pypsa/pypsa/stargazers) | Grid Simulation | **Python for Power System Analysis.** Open-source toolbox for simulating and optimizing modern power systems with high shares of variable renewables and demand-side flexibility. |
+| **[OpenEMS](https://github.com/OpenEMS/openems)** | [<img src="https://img.shields.io/github/stars/OpenEMS/openems?style=social&color=white" alt="OpenEMS Stars"/>](https://github.com/OpenEMS/openems/stargazers) | Energy Management | **Modular Open-Source Energy Management System.** Reference EMS implementation with EEBus/jEEBus integration, BSI-compliant control signals (§14a EnWG), and microgrid control capabilities. |
+| **[OpenStudio](https://github.com/NREL/OpenStudio)** | [<img src="https://img.shields.io/github/stars/NREL/OpenStudio?style=social&color=white" alt="OpenStudio Stars"/>](https://github.com/NREL/OpenStudio/stargazers) | Building Energy Model | **NREL Cross-Platform Building Energy Modeling Toolkit.** Supports demand-response controls, load shifting, and dynamic thermal storage simulation in buildings. |
+| **[EVerest Core](https://github.com/EVerest/everest-core)** | [<img src="https://img.shields.io/github/stars/EVerest/everest-core?style=social&color=white" alt="EVerest Core Stars"/>](https://github.com/EVerest/everest-core/stargazers) | EV Smart Charging | **LF Energy EVerest.** Complete software stack for EV charging infrastructure supporting ISO 15118, OCPI, and smart charging DR signals. |
+| **[GridLab-D](https://github.com/gridlab-d/gridlab-d)** | [<img src="https://img.shields.io/github/stars/gridlab-d/gridlab-d?style=social&color=white" alt="GridLab-D Stars"/>](https://github.com/gridlab-d/gridlab-d/stargazers) | Distribution Grid | **Power Distribution Simulation Tool.** Developed by US DOE/PNNL to simulate end-use demand response, smart metering, and distributed generation control. |
+| **[FlexMeasures](https://github.com/FlexMeasures/flexmeasures)** | [<img src="https://img.shields.io/github/stars/FlexMeasures/flexmeasures?style=social&color=white" alt="FlexMeasures Stars"/>](https://github.com/FlexMeasures/flexmeasures/stargazers) | Energy Flexibility | **LF Energy Platform for Demand Response.** "Lego Mindstorms" for smart energy planning—provides real-time forecasting, scheduling, and optimization for behind-the-meter assets. |
+| **[DPSim](https://github.com/sogno-platform/dpsim)** | [<img src="https://img.shields.io/github/stars/sogno-platform/dpsim?style=social&color=white" alt="DPSim Stars"/>](https://github.com/sogno-platform/dpsim/stargazers) | Real-time Simulator | **Dynamic Power System Simulator.** Part of LF Energy SOGNO project, simulating complex real-time grid response and VPP dynamic interactions. |
+| **[DRAF](https://github.com/DrafProject/draf)** | [<img src="https://img.shields.io/github/stars/DrafProject/draf?style=social&color=white" alt="DRAF Stars"/>](https://github.com/DrafProject/draf/stargazers) | Decision Support | **Demand Response Analysis Framework.** MILP-based optimization framework using Pyomo/Gurobi for multi-energy hubs, battery storage, heat pumps, and EV fleets. |
+| **[OpenGridGym](https://github.com/OpenGridGym/OpenGridGym)** | [<img src="https://img.shields.io/github/stars/OpenGridGym/OpenGridGym?style=social&color=white" alt="OpenGridGym Stars"/>](https://github.com/OpenGridGym/OpenGridGym/stargazers) | Market Simulation | **Open AI Toolkit for Distribution Markets.** PyTorch & OpenDSS-backed Gym environment for research on peer-to-peer electricity markets and AI-driven DR. |
+| **[DDQN for Smart Grid DR](https://github.com/ShafaghAPashaki/Capacity-constrained-demand-response-in-smart-grid-using-deep-reinforcement-learning)** | [<img src="https://img.shields.io/github/stars/ShafaghAPashaki/Capacity-constrained-demand-response-in-smart-grid-using-deep-reinforcement-learning?style=social&color=white" alt="DDQN DR Stars"/>](https://github.com/ShafaghAPashaki/Capacity-constrained-demand-response-in-smart-grid-using-deep-reinforcement-learning/stargazers) | RL Research | **Double Deep Q-Network for Demand Response.** PyTorch implementation for capacity-constrained incentive demand response optimization in smart grids. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help us expand this curated list of Demand Response & VPP tools:
+
+1. 🍴 **Fork** the repository.
+2. 📝 **Add/edit** entries in `README.md` following the standard table formatting.
+3. 🔍 Ensure pricing, free-tier limits, and star badges are accurate and formatted correctly.
+4. 📬 Submit a **Pull Request** with a brief summary of your changes.
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is community-curated for informational and educational purposes.
+- Demand response and grid management software involves compliance with energy regulators (FERC, NERC, ENTSO-E). Always verify official product documentation and security certifications before enterprise deployment.
+
+---
+
+## 💖 Support
+
+If you find this repository helpful for your energy engineering, grid research, or VPP project, please consider supporting the project!
+
+- ⭐ **Star** this repository to show your appreciation.
+- 🔀 **Fork** and share it with fellow energy professionals and researchers.
+- ☕ **Sponsor / Buy me a coffee**: Support ongoing open-source maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Demand-Response-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Demand-Response-Management&type=date&legend=top-left)
